@@ -8,7 +8,7 @@ function JournalItem({ title, post, date }) {
 			<h2 className="journal-item__header">{title}</h2>
 			<h2 className="journal-item__body">
 				<div className="journal-item__date">{formattedDate}</div>
-				<div className="journal-item__text">{post}</div>
+				<div className="journal-item__text">{post.slice(0, 32)}...</div>
 			</h2>
 		</>
 	);
